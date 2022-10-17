@@ -2,8 +2,8 @@
 
 import random
 
-list = [random.randrange(10, 100) for i in range(int(input('Введите кол-во элементов списка: ')))]
+list = [random.randrange(1, 100) for i in range(int(input('Введите кол-во элементов списка: ')))]
 list.sort()
 print('Список до перемешивания: ', list)
-random.shuffle(list)
-print('Список после перемешивания: ', list)
+rand = random.sample(list, len(list))
+print('Список после перемешивания: ', rand)
